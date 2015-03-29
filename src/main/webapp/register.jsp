@@ -8,6 +8,8 @@
 </head>
 <body>
 <form action="/register">
+<p> Formularz rejestracyjny:</p>
+<br />
 	Username: <input type="text" name="username"><br />
 	Password: <input type="password" name="password"><br />
 	Confirm Password: <input type="password" name="Cpassword"><br />

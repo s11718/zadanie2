@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>index</title>
 </head>
 <body>
-Hello World
+<p>ZADANIE 2</p>
+<br />
+<a href="login.jsp">Zaloguj</a><br />
+<a href="register.jsp">Zarajestruj</a><br />
+<a href="profile.jsp">Profil</a><br />
+<a href="premium.jsp">Premium</a>
 </body>
 </html>
