@@ -7,6 +7,14 @@ public class User extends Entity {
 	private String email;
 	private String type;
 	
+	public User(String username, String password, String email){
+		super();
+		this.setUsername(username);
+		this.setPassword(password);
+		this.setEmail(email);
+		this.type = "normal";
+	}
+	
 	public String getUsername() {
 		return username;
 	}
