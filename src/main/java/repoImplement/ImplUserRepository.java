@@ -1,5 +1,6 @@
-package repo.impl;
+package repoImplement;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import domain.Type;
@@ -26,43 +27,60 @@ public class ImplUserRepository implements IUserRepository {
 
 	
 	public void update(User entity) {
-		// TODO Auto-generated method stub
+		database.users.remove(entity);
 		
 	}
 
-	@Override
+	
 	public void delete(User entity) {
-		// TODO Auto-generated method stub
+
 		
 	}
 
-	@Override
+
 	public User get(int id) {
-		// TODO Auto-generated method stub
+		for(User u: database.users){
+			if(u.getId()==id)
+				return u;
+		}
 		return null;
 	}
 
-	@Override
+	
 	public List<User> getAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return database.users;
 	}
 
-	@Override
+	
 	public List<User> withType(Type type) {
-		// TODO Auto-generated method stub
-		return null;
+		return withType(type.getId());
 	}
 
-	@Override
+	
 	public List<User> withType(String typeName) {
-		// TODO Auto-generated method stub
-		return null;
+		for(Type t: database.types){
+			if(t.getName().equals(typeName))
+				return t.getUsers();
+		}
+		return new ArrayList<User>();
 	}
 
-	@Override
+	
 	public List<User> withType(int typeId) {
-		// TODO Auto-generated method stub
+		for(Type t: database.types){
+			if(t.getId()==typeId)
+				return t.getUsers();
+		}
+		return new ArrayList<User>();
+}
+
+
+	
+	public User withName(String name) {
+		for(User u: database.users){
+			if(u.getUsername().equals(name))
+				return u;
+		}
 		return null;
 	}
 }

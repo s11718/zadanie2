@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/login">
+<form action="LoginServlet" method="post">
 	<p>Logowanie</p>
 	
 	Username: <input type="text" name="username"><br />
 	Password: <input type="text" name="password"><br />
-	<input type="submit" name="submit" value="zaloguj">
+	<input type="submit" name="submit" value="Zaloguj">
 </form>
 </body>
 </html>

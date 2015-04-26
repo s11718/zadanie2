@@ -11,4 +11,5 @@ public interface IUserRepository extends IRepository<User>{
 	public List<User> withType(Type type);
 	public List<User> withType(String typeName);
 	public List<User> withType(int typeId);
+	public User withName(String name);
 }

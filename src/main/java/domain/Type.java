@@ -7,7 +7,6 @@ import java.util.List;
 public class Type extends Entity {
 
 	private String name;
-	
 	private List<User> users;
 	
 	public Type(){

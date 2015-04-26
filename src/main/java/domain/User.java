@@ -6,7 +6,10 @@ public class User extends Entity {
 	private String password;
 	private String email;
 	private String type;
+	private boolean state;
 	
+
+
 	public User(String username, String password, String email){
 		super();
 		this.setUsername(username);
@@ -38,6 +41,14 @@ public class User extends Entity {
 	}
 	public void setType(String type) {
 		this.type = type;
+	}
+	
+	public boolean getState() {
+		return state;
+	}
+
+	public void setState(boolean state) {
+		this.state = state;
 	}
 	
 

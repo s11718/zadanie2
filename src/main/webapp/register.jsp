@@ -7,14 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/register">
+<form action="RegistrationServlet" method="post">
 <p> Formularz rejestracyjny:</p>
 <br />
 	Username: <input type="text" name="username"><br />
 	Password: <input type="password" name="password"><br />
 	Confirm Password: <input type="password" name="Cpassword"><br />
 	Email: <input type="email" name="email"><br />
-	<input type="submit" name="submit" value="zaloguj">
+	<input type="submit" name="submit" value="Zarejestruj">
 </form>
 </body>
 </html>

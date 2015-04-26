@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p font-color:"red">ACCESS DENIED!</p>
+<p>Musisz się zalogować!</p>
+<a href="index.jsp">Wróć do menu</a>
 </body>
 </html>
