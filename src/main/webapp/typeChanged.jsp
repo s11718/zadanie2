@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Password Error</title>
+<title>Type Changed</title>
 </head>
 <body>
-	<p>Hasła muszą się zgadzać!</p>
-	<p><a href="register.jsp">Wróć</a></p>
+	<p>Pomyślnie zmieniono typ konta!</p>
+	<a href="addPremium.jsp">Wróć</a>
 </body>
 </html>

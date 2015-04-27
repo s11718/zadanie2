@@ -1,14 +1,19 @@
 package repoImplement;
 
 import domain.Type;
+import domain.User;
 import repo.IRepository;
 import repo.IRepositoryCatalog;
-import repo.IUserAddressRepo;
 import repo.IUserRepository;
 
 public class ImplRepositoryCatalog implements IRepositoryCatalog {
 
 	private DummyDb database = new DummyDb();
+	
+	public ImplRepositoryCatalog(){
+		User admin = new User("admin", "admin", "admin@admin.com", "Admin");
+		getUsers().save(admin);
+	}
 	
 	@Override
 	public IUserRepository getUsers() {
@@ -20,10 +25,7 @@ public class ImplRepositoryCatalog implements IRepositoryCatalog {
 		return new ImplTypeRepo(database);
 	}
 
-	@Override
-	public IUserAddressRepo getUserAddresses() {
-		return new ImplUserAddressRepo(database);
-	}
+
 	
 
 }

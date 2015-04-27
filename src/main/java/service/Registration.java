@@ -13,11 +13,11 @@ public class Registration {
 	private static IRepositoryCatalog catalog = new ImplRepositoryCatalog();
 	
 	public static void registerUser(String username, String password, String email){
-		User login = new User(username, password, email);
-		catalog.getUsers().save(login);
+		User user = new User(username, password, email);
+		catalog.getUsers().save(user);
 	}
 	
-	public List<User> getAllRegistered() {
+	public static List<User> getAllRegistered() {
 		 return catalog.getUsers().getAll();
 		}
 	
@@ -31,5 +31,7 @@ public class Registration {
 		}
 		throw new Exception();
 	}
+	
+
 
 }

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Password Error</title>
+<title>Log Out</title>
 </head>
 <body>
-	<p>Hasła muszą się zgadzać!</p>
-	<p><a href="register.jsp">Wróć</a></p>
+<p>Zostałeś wylogowany!</p>
+<a href="index.jsp">Przejdź do menu</a>
 </body>
 </html>

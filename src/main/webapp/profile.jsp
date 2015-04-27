@@ -12,10 +12,10 @@
 <p style="font-size:20px">Profil użytkownika<p><br>
 <%  
 	String username = (String) session.getAttribute("username");
-	out.println("<p><b>Typ konta: </b>" + Registration.getUser(username).getType() +
-			 "<br><b>Username: </b>" + Registration.getUser(username).getUsername() +
-			 "<br><b>Email: </b>" + Registration.getUser(username).getEmail() +
-			 "<br>"
+	out.println("<br /><b>Username: </b>" + Registration.getUser(username).getUsername() +
+			 "<br /><b>Email: </b>" + Registration.getUser(username).getEmail() +
+			 "<br /><b>Typ konta: </b>" + Registration.getUser(username).getType() +
+			 "<br />"
 			);
 %>
 

@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Premium</title>
 </head>
 <body>
-<p>Wow, Premium, super... tyle możliwości. ;x</p>
+<p style="font-size:20px">STRONA PREMIUM</p>
+<br />
+<p>Wow, Premium, wow... tyle możliwości. ;o</p>
+<br />
+<a href="index.jsp">Wróć</a>
 </body>
 </html>

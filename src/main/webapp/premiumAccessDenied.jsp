@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Password Error</title>
+<title>Access Denied</title>
 </head>
 <body>
-	<p>Hasła muszą się zgadzać!</p>
-	<p><a href="register.jsp">Wróć</a></p>
+<p>Nie masz uprawnień, aby tu przebywać! A kysz!</p>
+<a href="index.jsp">Wróć do menu</a>
 </body>
 </html>

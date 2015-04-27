@@ -15,7 +15,14 @@ public class User extends Entity {
 		this.setUsername(username);
 		this.setPassword(password);
 		this.setEmail(email);
-		this.type = "normal";
+		this.type = "Normal";
+	}
+	public User(String username, String password, String email, String Type){
+		super();
+		this.setUsername(username);
+		this.setPassword(password);
+		this.setEmail(email);
+		this.setType(Type);
 	}
 	
 	public String getUsername() {

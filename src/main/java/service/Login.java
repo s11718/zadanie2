@@ -10,6 +10,10 @@ public class Login {
 		Registration.getUser(username).setState(true);
 	}
 	
+	public static void logOut(String username){
+		Registration.getUser(username).setState(false);
+	}
+	
 	public static boolean checkPassword(String username, String password) throws Exception{
 		if(Registration.getUser(username).getPassword().equals(password) && Registration.getUser(username).getPassword().hashCode() == password.hashCode()){
 			return true;

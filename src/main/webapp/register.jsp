@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Register</title>
 </head>
 <body>
 <form action="RegistrationServlet" method="post">
@@ -14,7 +14,8 @@
 	Password: <input type="password" name="password"><br />
 	Confirm Password: <input type="password" name="Cpassword"><br />
 	Email: <input type="email" name="email"><br />
-	<input type="submit" name="submit" value="Zarejestruj">
+	<input type="submit" name="submit" value="Zarejestruj"><br />
 </form>
+	<p><a href="index.jsp">Wróć</a></p>
 </body>
 </html>

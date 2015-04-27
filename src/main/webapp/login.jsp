@@ -11,8 +11,9 @@
 	<p>Logowanie</p>
 	
 	Username: <input type="text" name="username"><br />
-	Password: <input type="text" name="password"><br />
-	<input type="submit" name="submit" value="Zaloguj">
+	Password: <input type="password" name="password"><br />
+	<input type="submit" name="submit" value="Zaloguj"><br />
 </form>
+	<p><a href="index.jsp">Wróć</a></p>
 </body>
 </html>

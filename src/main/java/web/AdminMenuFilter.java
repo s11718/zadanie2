@@ -1,5 +1,7 @@
 package web;
 
+
+
 import java.io.IOException;
 
 import javax.servlet.Filter;
@@ -14,42 +16,44 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import service.Login;
+import service.Registration;
 
 
+@WebFilter("index.jsp") 
+public class AdminMenuFilter implements Filter {
 
-
-@WebFilter({"profile.jsp","premium.jsp", "adminMenu.jsp", "allUsers.jsp" })
-public class CheckLoginFilter implements Filter {
-
- 
-    public CheckLoginFilter() {
-
+   
+    public AdminMenuFilter() {
+        
     }
 
-public void destroy() {
-		// TODO Auto-generated method stub
+	public void destroy() {
+		
 	}
 
-
-
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+	public synchronized void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		HttpSession session = ((HttpServletRequest) request).getSession();
 		String username = (String) session.getAttribute("username");
-			try {
-				if(Login.checkLoged(username)){
+		try {
+			if(Login.checkLoged(username)){
+				if(Registration.getUser(username).getType().equals("Admin")){
+				RequestDispatcher dispatcher = request.getRequestDispatcher("adminMenu.jsp");
+				dispatcher.forward(request, response);
+				}
+				else{
 					chain.doFilter(request, response);
 				}
-			} catch (Exception e) {
-				RequestDispatcher dispatcher = request.getRequestDispatcher("accessDenied.jsp");
-				dispatcher.forward(request, response);
-				e.printStackTrace();
+			}else{
+				chain.doFilter(request, response);
 			}
+		} catch (Exception e) {
+			chain.doFilter(request, response);
+			e.printStackTrace();
+		}
 	}
 
-
-
 	public void init(FilterConfig fConfig) throws ServletException {
-
+		
 	}
 
 }

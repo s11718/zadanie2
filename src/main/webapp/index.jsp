@@ -7,11 +7,12 @@
 <title>index</title>
 </head>
 <body>
-<p>ZADANIE 2</p>
+<p style="font-size:20px">ZADANIE 2</p>
 <br />
 <a href="login.jsp">Zaloguj</a><br />
 <a href="register.jsp">Zarajestruj</a><br />
 <a href="profile.jsp">Profil</a><br />
-<a href="premium.jsp">Premium</a>
+<a href="premium.jsp">Premium</a><br />
+<a href="LogOutSerlvet">Wyloguj</a>
 </body>
 </html>
