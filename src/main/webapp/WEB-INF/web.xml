@@ -13,4 +13,13 @@
     <filter-name>CheckPasswordFilter</filter-name>
     <url-pattern>/RegistrationServlet</url-pattern>
   </filter-mapping>
+  <filter>
+    <display-name>CheckLoginFilter</display-name>
+    <filter-name>CheckLoginFilter</filter-name>
+    <filter-class>web.CheckLoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CheckLoginFilter</filter-name>
+    <url-pattern>/LogOutSerlvet</url-pattern>
+  </filter-mapping>
 </web-app>

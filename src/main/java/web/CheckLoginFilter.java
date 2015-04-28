@@ -18,7 +18,7 @@ import service.Login;
 
 
 
-@WebFilter({"profile.jsp","premium.jsp", "adminMenu.jsp", "allUsers.jsp" })
+@WebFilter({"profile.jsp","premium.jsp", "adminMenu.jsp", "allUsers.jsp", "LogOutSerlvet" })
 public class CheckLoginFilter implements Filter {
 
  
